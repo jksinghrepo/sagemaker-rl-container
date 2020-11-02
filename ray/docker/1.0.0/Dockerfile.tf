@@ -31,9 +31,9 @@ RUN pip install --no-cache-dir \
     PyOpenGL==3.1.0 \
     pyyaml \
     redis==3.3.2 \
-    ray \
-    ray[tune] \
-    ray[rllib] \
+    ray==1.0.0 \
+    ray[tune]==1.0.0 \
+    ray[rllib]==1.0.0 \
     scipy \
     psutil \
     setproctitle \
@@ -42,6 +42,7 @@ RUN pip install --no-cache-dir \
     tf_slim \
     sagemaker-tensorflow-training==20.1.3
 
+pip install dataclasses
 # https://github.com/aws/sagemaker-rl-container/issues/39
 RUN pip install pyglet==1.3.2
 
