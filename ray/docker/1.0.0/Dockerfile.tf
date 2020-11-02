@@ -31,9 +31,9 @@ RUN pip install --no-cache-dir \
     PyOpenGL==3.1.0 \
     pyyaml \
     redis==3.3.2 \
-    ray==1.0.0 \
-    ray[tune]==1.0.0 \
-    ray[rllib]==1.0.0 \
+    ray \
+    ray[tune] \
+    ray[rllib] \
     scipy \
     psutil \
     setproctitle \
