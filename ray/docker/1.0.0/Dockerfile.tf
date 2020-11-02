@@ -42,7 +42,7 @@ RUN pip install --no-cache-dir \
     tf_slim \
     sagemaker-tensorflow-training==20.1.3
 
-pip install dataclasses
+RUN pip install dataclasses
 # https://github.com/aws/sagemaker-rl-container/issues/39
 RUN pip install pyglet==1.3.2
 
